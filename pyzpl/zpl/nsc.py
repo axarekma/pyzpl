@@ -1,4 +1,4 @@
-from pyzemax.zpl.zpl_objects import OBJECT_DICTIONARY
+from pyzpl.zpl.zpl_objects import OBJECT_DICTIONARY
 from .nscobjects import set_position, set_parameter, set_property
 import subprocess
 import sys

@@ -1,4 +1,4 @@
-# pyzemax
+# pyzpl
 Python wrapper to make macros and read data
 
 
