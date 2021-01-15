@@ -1,3 +1,4 @@
+from pyzemax.zpl.zpl_objects import OBJECT_DICTIONARY
 from .nscobjects import set_position, set_parameter, set_property
 import subprocess
 import sys
@@ -35,6 +36,12 @@ class NSC:
         self.split = 1
         self.scatter = 1
         self.usepolar = 1
+
+    def types(self):
+        print(f'Following types are enabled using either string or code:')
+        for k,v in OBJECT_DICTIONARY.items():
+            print(f'{k: <40} : {v}')
+
 
     def run(self, fname=None, wait=True):
         if fname is None:
